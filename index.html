@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmstead</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+  <!-- Font Google -->
+  <!-- Font Volkhov -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Source San Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&family=Volkhov:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- BS CSS v4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="myBody">
+  <header class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand">
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-leaf" aria-hidden="true"></i>
+          <span>Farmstead</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="content">
+              <div class="search-bar">
+                <input id="txtInput" class="search-txt" type="text" placeholder="" aria-label="Search">
+                <button class="search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+                <span class="clear">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="container mr-n2">
+              <button class="btn" id="switchButton" title="Click to switch theme">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+              </button>
+            </div>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item active" href="#">HOME</a>
+                <a class="dropdown-item" href="#">ABOUT</a>
+                <a class="dropdown-item" href="#">SERVICES</a>
+                <a class="dropdown-item" href="#">BLOG POSTS</a>
+                <a class="dropdown-item" href="#">LANDING PAGE</a>
+                <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                <a class="dropdown-item" href="#">404 PAGE</a>
+                <a class="dropdown-item" href="#">CONTACT</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="carouselFarm">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 carousel-left">
+          <h2>Farm</h2>
+          <h3 class="mb-sm-4 mb-2">Welcome to Farmstead
+            where Natural Food is born!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae libero beatae magni alias
+            consectetur!</p>
+          <button type="button" class="btn btn-search">
+            <span>LEARN MORE</span>
+          </button>
+        </div>
+        <div class="col-7 carousel-right p-0 ml-auto">
+          <div id="farmCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#farmCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#farmCarousel" data-slide-to="1"></li>
+              <li data-target="#farmCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/b1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-block">
+                  <h4>01/ <small>03</small> </h4>
+                  <p>Agriculture</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/b4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-block">
+                  <h4>02/ <small>03</small> </h4>
+                  <p>Farm Field</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/b8.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-block">
+                  <h4>03/ <small>03</small> </h4>
+                  <p>Organic Farm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="fieldFarm py-5">
+    <div class="container py-md-5 py-4">
+      <div class="row">
+        <div class="col-lg-6 pr-lg-5">
+          <h5 class="small-title">Grow Naturally</h5>
+          <h3>Leaders in the field</h3>
+          <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus
+            consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa
+            velit efficitur, dolor eget ex fermentum.
+          </p>
+          <button type="button" class="btn btn-style">
+            <span>DISCOVER MORE</span>
+          </button>
+        </div>
+        <div class="col-lg-6 mt-lg-0 mt-5">
+          <div class="field-inner">
+            <div class="field-item">
+              <img class="img-fluid" src="./img/img4.png" class="d-block w-100" alt="...">
+              <div class="field-caption d-none d-block">
+                <p>Natural Products</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <img class="img-fluid" src="./img/img2.png" class="d-block w-100" alt="...">
+              <div class="field-caption d-none d-block">
+                <p>Wheat Cultivation</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <img class="img-fluid" src="./img/img1.png" class="d-block w-100" alt="...">
+              <div class="field-caption d-none d-block">
+                <p>Modern Truck</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <img class="img-fluid" src="./img/img3.png" class="d-block w-100" alt="...">
+              <div class="field-caption d-none d-block">
+                <p>Organic Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="foods"></section>
+  <section class="quality"></section>
+  <section class="services"></section>
+  <section class="products"></section>
+  <section class="customer"></section>
+  <section class="contact"></section>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- BS4 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark")
+    }
+  </script>
+
+  <script>
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky",window.scrollY >0);
+    })
+  </script>
+</body>
+
+</html>
