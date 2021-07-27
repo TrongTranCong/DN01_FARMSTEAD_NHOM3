@@ -55,10 +55,10 @@
                     placeholder=""
                     aria-label="Search"
                   />
-                  <button class="search-btn" type="submit">
+                  <div class="search-btn">
                     <i class="fa fa-search"></i>
-                  </button>
-                  <span class="clear">
+                  </div>
+                  <span class="clear" onclick= "document.getElementById('txtInput').value =''">
                     <i class="fa fa-times" aria-hidden="true"></i>
                   </span>
                 </div>
@@ -496,7 +496,13 @@
         document.getElementById("myBody").classList.toggle("dark");
       };
     </script>
-
+    <script>
+      var search = document.querySelector(".search-bar");
+      var icon = document.querySelector(".search-btn");
+      icon.onclick = function(){
+        search.classList.toggle("active");
+      }
+    </script>
     <script>
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
