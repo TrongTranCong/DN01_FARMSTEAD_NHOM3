@@ -68,10 +68,10 @@
                     placeholder=""
                     aria-label="Search"
                   />
-                  <div class="search-btn">
+                  <button class="search-btn" type="submit">
                     <i class="fa fa-search"></i>
-                  </div>
-                  <span class="clear" onclick= "document.getElementById('txtInput').value =''">
+                  </button>
+                  <span class="clear">
                     <i class="fa fa-times" aria-hidden="true"></i>
                   </span>
                 </div>
@@ -238,6 +238,84 @@
         </div>
       </div>
     </section>
+
+    <section class="services">
+      <div class="services__content" class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="services__content1">
+                <h4>What we do</h4>
+                <h1 style="font-size: 40px">
+                  Why Choose Our Fresh Organic Foods
+                </h1>
+              </div>
+            </div>
+            <div class="col-6">
+              <!-- <div class="services__content2"> -->
+              <br />
+              <p style="font-weight: 20" class="p__ser">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur sint quo quidem sed illum commodi quos deserunt neque
+                quas nemo perspiciatis atque ad, officia laudantium vero non
+                iusto laborum vel!
+              </p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <h4 class="bg__ser">Services</h4>
+        </div>
+      </div>
+  
+      <div class="services__tabb">
+        <div class="container">
+          <div class="row">
+            <div class="card" style="width: 21rem">
+              <img src="./img/service1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span class="label-style">Natural</span> <br />
+                <a href="#" class="card-link">Agriculture Products</a>
+              </div>
+  
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+  
+            <div class="card" style="width: 21rem">
+              <img src="./img/service2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span class="label-style">Agriculture</span> <br />
+                <a href="#" class="card-link"> Fresh Vegetables</a>
+              </div>
+  
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+  
+            <div class="card" style="width: 21rem">
+              <img src="./img/service3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <span class="label-style">Farm</span><br />
+                <a href="#" class="card-link">Organic Products</a>
+              </div>
+  
+              <p class="card-text" class="mt-3">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
     <section class="foods"></section>
     <section class="quality py-5">
       <div class="container py-5">
@@ -494,8 +572,87 @@
         </div>
       </div>
     </section>
-    <section class="customer"></section>
-    <section class="contact"></section>
+
+    <section class="customer py-5">
+      <div class="backround-image"></div>
+      <div class="container customer-layout py-lg-5">
+        <div id="carousel__customer" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel__customer" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel__customer" data-slide-to="1"></li>
+            <li data-target="#carousel__customer" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-4 carousel-info">
+                  <img src="./img/testi1.jpg" class="d-block" alt="..." />
+                  <h3>Dennis wilson</h3>
+                  <p>Customer</p>
+                </div>
+                <div class="col-8 carousel-text">
+                  <span>
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet int consectetur adipisicing
+                      elit. Velita beatae laudantium Quas minima sunt natus
+                      tempore, maiores aliquid modi felis sequi optio lacinia id
+                      ipsum non velit, culpa. voluptate rem ullam dolore nisi
+                      est quasi, doloribus tempora. est elit. Non quae, fugiat
+                      ad libero justo sed amet.
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4 carousel-info">
+                  <img src="./img/testi2.jpg" class="d-block" alt="..." />
+                  <h3>Dennis wilson</h3>
+                  <p>Customer</p>
+                </div>
+                <div class="col-8 carousel-text">
+                  <span>
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet int consectetur adipisicing
+                      elit. Velita beatae laudantium Quas minima sunt natus
+                      tempore, maiores aliquid modi felis sequi optio lacinia id
+                      ipsum non velit, culpa. voluptate rem ullam dolore nisi
+                      est quasi, doloribus tempora. est elit. Non quae, fugiat
+                      ad libero justo sed amet.
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-4 carousel-info">
+                  <img src="./img/testi3.jpg" class="d-block" alt="..." />
+                  <h3>Dennis wilson</h3>
+                  <p>Customer</p>
+                </div>
+                <div class="col-8 carousel-text">
+                  <span>
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                      Lorem ipsum dolor sit amet int consectetur adipisicing
+                      elit. Velita beatae laudantium Quas minima sunt natus
+                      tempore, maiores aliquid modi felis sequi optio lacinia id
+                      ipsum non velit, culpa. voluptate rem ullam dolore nisi
+                      est quasi, doloribus tempora. est elit. Non quae, fugiat
+                      ad libero justo sed amet.
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- test pullreq newBranch -->
 
@@ -536,18 +693,128 @@
         document.getElementById("myBody").classList.toggle("dark");
       };
     </script>
-    <script>
-      var search = document.querySelector(".search-bar");
-      var icon = document.querySelector(".search-btn");
-      icon.onclick = function(){
-        search.classList.toggle("active");
-      }
-    </script>
+
     <script>
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
     </script>
+
+
+
+
+
+<footer>
+  <div class="content" class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="find__us">
+            <h3 style="color: black;">FIND US</h3>
+            <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+            <a>Phone:</a>
+            <a href="#">+12 23456790</a><br />
+            <a>Email:</a>
+            <a href="#">info@example.com</a><br />
+            <a>Fax:</a>
+            <a href="#">+ 11 367 21890</a>
+          </div>
+
+        </div>
+        <div class="col-4">
+          <div class="f__icon">
+            <i class="fab fa-envira"></i>
+            <a href="#">Farmstead</a>
+          </div>
+
+          <p>Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod ligul
+            aeget,
+            enenatis dui.</p> <br />
+          <br />
+          <div class="w3">
+            <a> © 2021 Farmstead. All Rights Reserved | WordPress Theme by</a>
+            <a href="https://w3layouts.com/" ">W3Layouts.</a>
+            </div>
+          </div>
+          <div class=" col-4">
+              <div class="new">
+                <h3 style="color: black;"> NEWSLETTER</h3>
+              </div>
+              Subscribe to our mailing list and get updates to your email inbox.
+
+              <div class="contact__right">
+                <form style="outline: none;">
+                  <!-- <label for="user">Username</label> -->
+                  <span class="email__r">
+                    <input type="email" placeholder="Email Address" style="background-color:#f4f4f4; border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px; height: 50px;
+                    width: 350px; 
+                    border:none;
+                    padding: 10px 0;
+                    
+                    ">
+                  </span>
+
+                  <button>
+                    <i class="fa fa-paper-plane" style="color:white; height: 38px;"></i>
+                  </button>
+
+
+                </form>
+                <br />
+              </div>
+
+              <div class="tabs__social">
+                <div class="row">
+                  <div class="col">
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <i class="fab fa-facebook-f"></i>
+
+                  </div>
+                  <div class="col">
+                    <a href="https://in.linkedin.com/company/w3layouts">
+                      <i class="fab fa-linkedin-in"></i>
+
+                  </div>
+                  <div class="col">
+                    <a href="https://twitter.com/W3layouts">
+                      <i class="fab fa-twitter"></i>
+
+                  </div>
+                  <div class="col">
+                    <a href="https://w3layouts.com/tag/email-templates/">
+                      <i class="fab fa-google-plus-g"></i>
+
+                  </div>
+                  <div class="col">
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <i class="fab fa-github"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<a href="#" class="backToTop cd-top text-replace js-cd-top" style="font-size: 30px;">
+
+  <i class="fa fa-level-up-alt"></i>
+</a>
+
+<!-- BACK TO TOP -->
+<script src="./js/util.js"></script>
+<script src="./js/main.js"></script>
+
+
+
+
   </body>
 </html>
