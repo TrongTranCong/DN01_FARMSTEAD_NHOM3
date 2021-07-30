@@ -743,6 +743,94 @@ a.product__button:hover {
   animation: agile 0.3s linear;
 }
 
+/* **CUSTOMER */
+/* ******-CUSTOMER ******/
+.customer {
+  position: relative;
+}
+.container.customer-layout {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 100px;
+  transition: 20s;
+  
+}
+
+.backround-image {
+  background-image: url(../img/bg1.jpg);
+  object-fit: cover;
+  height: 512px;
+  width: 100%;
+  position: relative;
+}
+
+.backround-image::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10 10 10 / 50%);
+}
+.customer .carousel-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.carousel-item .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-text p {
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  text-indent: 30px;
+  display: block;
+}
+.carousel-text i {
+  color: #fb811e;
+  font-size: 30px;
+}
+.carousel-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Volkhov";
+  color: #fff;
+}
+.carousel-info p {
+  font-size: 16px;
+  color: #fff;
+}
+
+#carousel__customer {
+  position: relative;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -75px;
+}
+.carousel-indicators li {
+  width: 12px;
+  height: 3px;
+  font-size: 1px;
+  padding: 4px 0px;
+  border-radius: 50%;
+}
+.carousel-indicators li:hover {
+  background-color: #fb811e;
+}
+.carousel-indicators .active {
+  background-color: #fb811e;
+}
+
+/* ** END  CUSTOMER */
+
+
 /* ***FOOTER */
 
 
