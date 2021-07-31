@@ -382,7 +382,8 @@ input:focus {
 .services {
   background-color: #009f4d;
   width: 100%;
-  height: 750px;
+  
+  height:100%;
   margin: 0 auto;
   font-family: "Volkhov";
   position: relative;
@@ -855,6 +856,7 @@ a.product__button:hover {
 /* **CUSTOMER */
 /* ******-CUSTOMER ******/
 .customer {
+  height: 100%;
   position: relative;
 }
 .container.customer-layout {
@@ -900,6 +902,7 @@ a.product__button:hover {
   color: #fff;
   text-indent: 30px;
   display: block;
+  
 }
 .carousel-text i {
   color: #fb811e;
@@ -910,13 +913,18 @@ a.product__button:hover {
   font-weight: 600;
   font-family: "Volkhov";
   color: #fff;
+  text-align: center;
 }
 .carousel-info p {
   font-size: 16px;
   color: #fff;
 }
 
-#carousel__customer {
+.carousel-info .img_cus {
+ text-align: center;
+}
+
+.carousel__customer {
   position: relative;
 }
 .carousel-indicators {
@@ -1006,12 +1014,21 @@ padding-top: 2%;
 padding: 10px 0;
 }
 
-.tabs__social .col{
+/* .tabs__social .col{
 background-color:rgb(10 191 83 / 8%);
 border-radius: 50px;
 padding:15px 10px;
 margin:10px ;
-}
+} */
+
+.tabs__social .col{
+  background-color:rgb(10 191 83 / 8%);
+  border-radius: 50%;
+  padding:4% 2%;
+  margin:5% 2%;
+  }
+
+
 .tabs__social .col:hover{
   background-color:#fcf1e7;
 }
