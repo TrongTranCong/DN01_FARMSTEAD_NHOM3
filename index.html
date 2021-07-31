@@ -71,7 +71,7 @@
                   <button class="search-btn" type="submit">
                     <i class="fa fa-search"></i>
                   </button>
-                  <span class="clear">
+                  <span class="clear" onclick="document.getElementById('txtInput').value =''">
                     <i class="fa fa-times" aria-hidden="true"></i>
                   </span>
                 </div>
@@ -700,7 +700,13 @@
         header.classList.toggle("sticky", window.scrollY > 0);
       });
     </script>
-
+    <script>
+    var search = document.querySelector(".search-bar");
+    var icon = document.querySelector(".search-btn");
+    icon.onclick = function () {
+      search.classList.toggle("active");
+    }
+    </script>
 
 
 
