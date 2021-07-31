@@ -68,10 +68,10 @@
                     placeholder=""
                     aria-label="Search"
                   />
-                  <div class="search-btn">
+                  <button class="search-btn" type="submit">
                     <i class="fa fa-search"></i>
-                  </div>
-                  <span class="clear" onclick= "document.getElementById('txtInput').value =''">
+                  </button>
+                  <span class="clear" onclick="document.getElementById('txtInput').value =''">
                     <i class="fa fa-times" aria-hidden="true"></i>
                   </span>
                 </div>
@@ -239,7 +239,6 @@
       </div>
     </section>
 <!-- **SERVICES ****-->
-
 <section class="services">
   <div class="services__content">
     <div class="container">
@@ -315,8 +314,7 @@
 </section>
 
 <!-- **END SERVICES ****-->
-
-    <section class="foods"></section>
+<section class="foods"></section>
     <section class="quality py-5">
       <div class="container py-5">
         <div class="row">
@@ -571,10 +569,8 @@
           <!-- col-sm-6 col-md-6 -->
         </div>
       </div>
-    </section>
-    
+    </section>    
     <!-- **CUSTOMER*** -->
-    
     <section class="customer py-5">
       <div class="backround-image"></div>
       <div class="container customer-layout py-lg-5">
@@ -590,6 +586,7 @@
                 <div class="col-4 carousel-info">
                   <img src="./img/testi1.jpg" class="d-block" alt="..." />
                   <h3 style="color: white;">Dennis wilson</h3>
+
                   <p>Customer</p>
                 </div>
                 <div class="col-8 carousel-text">
@@ -612,6 +609,7 @@
                 <div class="col-4 carousel-info">
                   <img src="./img/testi2.jpg" class="d-block" alt="..." />
                   <h3 style="color: white;">Dennis wilson</h3>
+
                   <p>Customer</p>
                 </div>
                 <div class="col-8 carousel-text">
@@ -657,7 +655,6 @@
     </section>
 
     <!-- END CUSTOMER*** -->
-
     <!-- test pullreq newBranch -->
 
     <!-- Jquery -->
@@ -697,25 +694,23 @@
         document.getElementById("myBody").classList.toggle("dark");
       };
     </script>
-    <script>
-      var search = document.querySelector(".search-bar");
-      var icon = document.querySelector(".search-btn");
-      icon.onclick = function(){
-        search.classList.toggle("active");
-      }
-    </script>
+
     <script>
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
     </script>
-
-
-
+    <script>
+    var search = document.querySelector(".search-bar");
+    var icon = document.querySelector(".search-btn");
+    icon.onclick = function () {
+      search.classList.toggle("active");
+    }
+    </script>
 <footer>
   <div class="content">
-    <div class="container">
+  <div class="container">
       <div class="row">
         <div class="col-4">
           <div class="find__us">
@@ -806,25 +801,11 @@
       </div>
     </div>
 </footer>
-
-
-
-
-
-
 <a href="#" class="backToTop cd-top text-replace js-cd-top" style="font-size: 30px;">
-
   <i class="fa fa-level-up-alt"></i>
 </a>
-
 <!-- BACK TO TOP -->
 <script src="./js/util.js"></script>
 <script src="./js/main.js"></script>
-
-
-
-
-
-
   </body>
 </html>
