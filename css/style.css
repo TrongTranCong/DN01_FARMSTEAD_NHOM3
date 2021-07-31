@@ -473,12 +473,13 @@ input:focus {
 }
 .services__tabb .card-img-top {
   border-radius: 5% 5% 0 0;
+  justify-content: space-between;
+}
+.services__tabb .row {
+  justify-content: space-between;
 }
 
 /* END  SERVICES */
-
-
-
 
 
 
