@@ -1011,8 +1011,9 @@ color: #fb811e;
   background-color:#009f4d ;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-padding-right: 40px;
-padding-top: 2%;
+
+padding-right: 50px;
+    padding-top: 10px;
 }
 .contact__right i{
   font-size: 25px;
@@ -1045,22 +1046,29 @@ padding-left: 10px;
   /* BACK TO TOP */
 
   .backToTop{
-    padding-bottom: 70px;
-    width: 60px;
-    height: 50px;
-    text-align: center;
-    line-height: 80px;
+    padding-bottom:40px;
+    width: 40px;
+    height: 20px;
+    text-align:center;
     background-color: #009f4d;
     display: block;
     font-size: 1rem;
     color:white;
     position: fixed;
     right:50px;
-    bottom:140px;
+    bottom:10px;
+    
   }
   .cd-top--is-visible {
     visibility: visible;
     opacity: 1;
+  }
+
+  .backToTop i{
+    font-size: 15px;
+    bottom: 80%;
+    align-items: center;
+    
   }
   
 
@@ -1147,6 +1155,15 @@ padding-left: 10px;
 @media screen and (max-width: 450px) {
   .product__first-item {
     max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+/**************** CUSTOMER RESPONSIVE  **************/
+@media screen and (max-width: 768px) {
+  .customer {
+    /* max-width: 100%; */
+    height:100%;
     flex: 0 0 100%;
   }
 }
