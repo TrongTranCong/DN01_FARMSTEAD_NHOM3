@@ -275,10 +275,10 @@ input:focus {
     color: black;
   }
   #myBody h3 {
-    color: #fff;
+  color: #fff;
   }
   .dark#myBody h2 {
-    color: #f4f4f4;
+    color: #f4f4f4; 
   }
   .dark#myBody h3 {
     color: black;
@@ -288,7 +288,7 @@ input:focus {
     margin-left: -3rem;
   }
   .carouselFarm .col-md-5 h3 {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 45px;
     color: #fff;
   }
@@ -334,12 +334,7 @@ input:focus {
     margin-right: 8%;
   }
 }
-@media (max-width: 668px) {
-  .carouselFarm .col-md-5 {
-    max-width: 90vw;
-    left: 1.5rem;
-  }
-}
+
 @media (max-width: 576px) {
   .carouselFarm .col-md-5 {
     max-width: 86vw;
@@ -450,11 +445,12 @@ input:focus {
   margin-top: 20px;
 }
 .card .card-body a {
-  font-family: "Source Sans Pro";
-  font-weight: 600;
+  
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 510;
   font-size: 24px;
   line-height: 80px;
-  color: black;
+  color:#060606;
   text-align: left;
   margin-left: 0;
   padding: 10px 0;
@@ -472,11 +468,13 @@ input:focus {
   border-radius: 5%;
   margin: 0 10px;
   padding-bottom: 20px;
+  
 }
 .services__tabb .card p {
   padding-left: 20px;
   color: #707070;
   font-size: 17px;
+  padding-right: 20px;
 }
 .services__tabb .card-img-top {
   border-radius: 5% 5% 0 0;
@@ -485,6 +483,12 @@ input:focus {
 .services__tabb .row {
   justify-content: space-between;
 }
+
+.dark#myBody .services__tabb .row .card, .dark#myBody .services__tabb .row .card a {
+  background-color: black;
+color:#fff;
+}
+
 
 /* END  SERVICES */
 
@@ -600,7 +604,7 @@ input:focus {
 }
 .col-lg-6 h3 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 7000;
   margin-bottom: 24px;
   color: #fff;
 }
@@ -638,7 +642,7 @@ input:focus {
   background-color: #fff;
 }
 .dark#myBody .field-item p {
-  color: #060606;
+color: #060606;
 }
 .dark#myBody .field-item p:hover {
   color: #009f4d;
@@ -862,6 +866,7 @@ a.product__button:hover {
 /* ******-CUSTOMER ******/
 .customer {
   height:100%;
+  width: 100%;
   position: relative;
 }
 .container.customer-layout {
@@ -876,6 +881,7 @@ a.product__button:hover {
 
 .backround-image {
   background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
   object-fit: cover;
   height: 512px;
   width: 100%;
@@ -957,7 +963,12 @@ a.product__button:hover {
 footer {
   margin-bottom: 20px;
 }
-
+.find__us h3 {
+  color: #fdfffc;
+  }
+.dark#myBody .find__us h3 {
+  color: #060606;
+  }
 .content .find__us a{
   line-height: 40px;
 }
@@ -965,8 +976,8 @@ footer {
   padding-top: 5%;
 }
 .content h3{
-  font-family:'Volkhov', serif;
-  font-weight: 600;
+  font-family:'Volkhov', serif; 
+   font-weight: 600; 
 }
 .content a{
   color: #707070;
@@ -979,7 +990,6 @@ footer {
 .content p{
   color: #707070;
 }
-
 
 .f__icon a{
   font-family:'Volkhov', serif;
@@ -1011,18 +1021,39 @@ position: relative;
 .w3 a:hover{
 color: #fb811e;
 }
+
+.new h3 {
+  color: #fdfffc;
+  }
+.dark#myBody .new h3 {
+  color: #060606;
+  }
+
+
+.contact__right .iput {
+  
+  background-color: #0b0d0e;
+  word-wrap: none;
+  
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+}
+.dark#myBody .contact__right .iput {
+  background-color: #f4f4f4;
+  }
+
 .contact__right button{
-  position: absolute;
+  
   background-color:#009f4d ;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-
-padding-right: 50px;
-    padding-top: 10px;
+  width: 60px;
+  padding-top: 10px;
 }
 .contact__right i{
   font-size: 25px;
-  padding-left: 40%;
+  padding-left: 10%;
 }
 .contact__right form{
 padding: 10px 0;
@@ -1076,6 +1107,13 @@ padding-left: 10px;
     
   }
   
+  @media screen and (max-width: 768px) {
+    .carousel__customer {
+    text-size-adjust: initial;
+    
+    }
+  }
+
 
 
 
@@ -1169,6 +1207,6 @@ padding-left: 10px;
   .customer {
     /* max-width: 100%; */
     height:100%;
-    flex: 0 0 100%;
+    
   }
 }
