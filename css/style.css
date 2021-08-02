@@ -319,7 +319,7 @@ input:focus {
     border-radius: 8px;
   }
   .dark#myBody .col-md-5 {
-    /* background-color: #fff; */
+    background-color: #fff; 
   }
   .carouselFarm .col-7 {
     margin-left: 0 !important;
