@@ -663,16 +663,20 @@ color:#fff;
 
 
 /* END  SERVICES */
-
-
-
-
 /* hai's section */
 /******************* QUALITY  **************/
-
-/* .quality {
-  height: 100vh;
-} */
+.dark#mybody .quality__left h3.title {
+  color: #000;
+}
+.dark#myBody .quality .quality__item h4 {
+  color: #000;
+}
+.dark#myBody .feature .feature__title h4 {
+  color: #000;
+}
+.dark#myBody .feature .feature__title h4:hover {
+  color: #009f4d;
+}
 .quality .row {
   margin-left: -15px;
   margin-right: -15px;
@@ -697,7 +701,7 @@ h5.small-title {
 h3.title {
   font-size: 40px;
   font-weight: 600;
-  color: #060606;
+  color: #fdfffc;
   font-family: "Volkhov";
 }
 .fa.fa-life-ring,
@@ -709,7 +713,7 @@ h3.title {
 .quality__item h4 {
   font-family: "Volkhov";
   font-size: 24px;
-  color: #060606;
+  color: #fdfffc;
   font-weight: 600;
 }
 
@@ -773,7 +777,7 @@ a.feature__item:hover .feature__title h4 {
 .feature__title h4 {
   font-size: 22px;
   font-family: "Volkhov";
-  color: #060606;
+  color: #fdfffc;
   font-weight: 600;
   transition: all 0.5s;
 }
