@@ -1,5 +1,4 @@
 /* GLOBAL  */
-/* GLOBAL  */
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +62,6 @@ body {
     color: #fff;
   }
 }
-
 /* END RESPONSIVE */
 .navbar {
   background-color: transparent;
@@ -312,7 +310,7 @@ input:focus {
 }
 @media (max-width: 768px) {
   .carouselFarm .col-md-5 {
-    max-width: 89.5vw;
+    max-width: 90vw;
     left: 2rem;
     background-color: #262626;
     padding: 3em 2em 2em 4em;
@@ -341,6 +339,7 @@ input:focus {
   .carouselFarm .col-md-5 {
     max-width: 86vw;
     padding: 1.75em 1em 2em 0.5em;
+    left: 1rem;
   }
   .carouselFarm .col-md-5 h2 {
     font-size: 70px;
