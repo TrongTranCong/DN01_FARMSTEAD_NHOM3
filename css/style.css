@@ -9,6 +9,7 @@
 body {
   font-family: "Volkhov", serif;
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden !important;
 }
 /* ***************************HEADER****************************** */
 .header {
