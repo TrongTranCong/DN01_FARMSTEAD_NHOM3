@@ -320,7 +320,7 @@ input:focus {
     padding: 3em 2em 2em 4em;
     border-radius: 8px;
   }
-  .dark#myBody .col-md-5 {
+  .dark#myBody .carousel-left-content {
     background-color: #fff;
   }
   .carouselFarm .col-md-7 {
@@ -444,6 +444,9 @@ input:focus {
 }
 .carousel-inner p{
   margin-bottom: 0rem;
+}
+.carouselFarm .carousel-indicators {
+  bottom: 0;
 }
 /* ******************END CAROUSEL********************* */
 
