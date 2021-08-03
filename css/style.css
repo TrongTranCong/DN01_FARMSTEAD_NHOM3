@@ -1163,13 +1163,6 @@ padding: 10px 0;
     
   }
   
-  @media screen and (max-width:576px) {
-    .customer py-5 {
-    height: 8000px;
-    
-    }
-  }
-
 
 /************** KEYFRAMES  **************/
 @keyframes agile {
