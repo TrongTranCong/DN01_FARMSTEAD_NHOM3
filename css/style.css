@@ -383,7 +383,6 @@ input:focus {
 .services {
   background-color: #009f4d;
   width: 100%;
-  
   height:100%;
   margin: 0 auto;
   font-family: "Volkhov";
@@ -447,12 +446,12 @@ input:focus {
   margin-top: 20px;
 }
 .card .card-body a {
-  
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 510;
   font-size: 24px;
   line-height: 80px;
-  color:#060606;
+  
+  color: #fff;
   text-align: left;
   margin-left: 0;
   padding: 10px 0;
@@ -470,6 +469,7 @@ input:focus {
   border-radius: 5%;
   margin: 0 10px;
   padding-bottom: 20px;
+  background-color:black;
   
 }
 .services__tabb .card p {
@@ -486,14 +486,18 @@ input:focus {
   justify-content: space-between;
 }
 
-.dark#myBody .services__tabb .row .card, .dark#myBody .services__tabb .row .card a {
-  background-color: black;
-color:#fff;
+.dark#myBody .services__tabb .row .card {
+  background-color:white;
+
+}
+.dark#myBody .services__tabb .row .card a{
+color:#060606;
+
 }
 
+/* END  SERVICES ******/
 
-/* END  SERVICES */
-
+/***** REPONSIVE SERVICES ******/
 @media (max-width:576px) {
   .services__content .bg__ser {
     /* bottom: 80%; */
@@ -512,6 +516,8 @@ color:#fff;
     top:10%;
   }
 }
+
+/***** END REPONSIVE SERVICES ******/
 
 
 
@@ -882,10 +888,9 @@ a.product__button:hover {
   animation: agile 0.3s linear;
 }
 
-/* **CUSTOMER */
+
 /* ******-CUSTOMER ******/
 .customer {
-  height:100%;
   width: 100%;
   position: relative;
 }
@@ -901,9 +906,8 @@ a.product__button:hover {
 
 .backround-image {
   background-image: url(../img/bg1.jpg);
-  background-repeat: no-repeat;
   object-fit: cover;
-  height: 512px;
+  height:512px;
   width: 100%;
   position: relative;
 }
@@ -928,7 +932,7 @@ a.product__button:hover {
 }
 
 .carousel-text p {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 34px;
   color: #fff;
   text-indent: 30px;
@@ -947,8 +951,9 @@ a.product__button:hover {
   text-align: center;
 }
 .carousel-info p {
-  font-size: 16px;
+  font-size: 26px;
   color: #fff;
+  
 }
 
 .carousel-info .img_cus {
@@ -961,6 +966,9 @@ a.product__button:hover {
 .carousel-indicators {
   position: absolute;
   bottom: -75px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center !important;
 }
 .carousel-indicators li {
   width: 12px;
@@ -978,10 +986,26 @@ a.product__button:hover {
 
 /* ** END  CUSTOMER */
 
+/* ** REPONSIVE  CUSTOMER */
+
+
+@media screen and (max-width: 768px) {
+  .customer {
+    height:800px;  
+  }
+  .backround-image {
+    object-fit: cover;
+    height:800px;}
+
+}
+
+/* ** END REPONSIVE  CUSTOMER */
+
 
 /* ***FOOTER */
 footer {
   margin-bottom: 20px;
+  padding-top: 80px;
 }
 .find__us h3 {
   color: #fdfffc;
@@ -1006,7 +1030,9 @@ footer {
   color: #fb811e;
   text-decoration-line:none;
 }
-
+.f__icon{
+  padding-top:13%;
+}
 .content p{
   color: #707070;
 }
@@ -1138,14 +1164,12 @@ padding: 10px 0;
     
   }
   
-  @media screen and (max-width: 768px) {
-    .carousel__customer {
-    text-size-adjust: initial;
+  @media screen and (max-width:576px) {
+    .customer py-5 {
+    height: 8000px;
     
     }
   }
-
-
 
 
 /************** KEYFRAMES  **************/
@@ -1230,14 +1254,5 @@ padding: 10px 0;
   .product__first-item {
     max-width: 100%;
     flex: 0 0 100%;
-  }
-}
-
-/**************** CUSTOMER RESPONSIVE  **************/
-@media screen and (max-width: 768px) {
-  .customer {
-    /* max-width: 100%; */
-    height:100%;
-    
   }
 }
