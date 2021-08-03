@@ -360,9 +360,7 @@ input:focus {
   .carouselFarm .carousel-indicators {
     right: 0;
   }
-}
 
-/* **************************END RESPONSIVE CAROUSEL ***************************/
 #farmCarousel .carousel-inner {
   height: 100vh;
 }
@@ -860,10 +858,9 @@ a.product__button:hover {
   animation: agile 0.3s linear;
 }
 
-/* **CUSTOMER */
+
 /* ******-CUSTOMER ******/
 .customer {
-  height:100%;
   width: 100%;
   position: relative;
 }
@@ -879,9 +876,8 @@ a.product__button:hover {
 
 .backround-image {
   background-image: url(../img/bg1.jpg);
-  background-repeat: no-repeat;
   object-fit: cover;
-  height: 512px;
+  height:512px;
   width: 100%;
   position: relative;
 }
@@ -906,7 +902,7 @@ a.product__button:hover {
 }
 
 .carousel-text p {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 34px;
   color: #fff;
   text-indent: 30px;
@@ -925,8 +921,9 @@ a.product__button:hover {
   text-align: center;
 }
 .carousel-info p {
-  font-size: 16px;
+  font-size: 26px;
   color: #fff;
+  
 }
 
 .carousel-info .img_cus {
@@ -939,6 +936,9 @@ a.product__button:hover {
 .carousel-indicators {
   position: absolute;
   bottom: -75px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center !important;
 }
 .carousel-indicators li {
   width: 12px;
@@ -956,10 +956,26 @@ a.product__button:hover {
 
 /* ** END  CUSTOMER */
 
+/* ** REPONSIVE  CUSTOMER */
+
+
+@media screen and (max-width: 768px) {
+  .customer {
+    height:800px;  
+  }
+  .backround-image {
+    object-fit: cover;
+    height:800px;}
+
+}
+
+/* ** END REPONSIVE  CUSTOMER */
+
 
 /* ***FOOTER */
 footer {
   margin-bottom: 20px;
+  padding-top: 80px;
 }
 .find__us h3 {
   color: #fdfffc;
@@ -984,7 +1000,9 @@ footer {
   color: #fb811e;
   text-decoration-line:none;
 }
-
+.f__icon{
+  padding-top:13%;
+}
 .content p{
   color: #707070;
 }
@@ -1011,7 +1029,7 @@ position: relative;
   color: black;
 } 
 .new{
-  padding-top: 15%;
+  padding-top: 10%;
 }
 .w3 a{
   color:#009f4d;
@@ -1057,21 +1075,32 @@ color: #fb811e;
 padding: 10px 0;
 }
 
-.tabs__social .col{
-  background-color:rgb(10 191 83 / 8%);
-  border-radius: 50%;
-  padding:3% 2%;
-  margin:5% 2%;
-  }
-.tabs__social .col:hover{
-  background-color:#fcf1e7;
+.tabs__mxh a{
+    width: 35px;
+    height: 35px;
+    background: rgb(10 191 83 / 8%);
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+  border-radius: 50%; 
+ background-color:rgb(10 191 83 / 8%); 
 }
-.tabs__social .col i{
-color: #009f4d;
-padding-left: 10px;
+.tabs__mxh span{
+  color: #009f4d;
+  padding-top: 10px;
+  align-items: center;
 }
-.tabs__social .col i:hover{
+
+.tabs__mxh ul li{
+  display: inline-block;
+  list-style: none;
+  
+}
+.tabs__mxh span:hover{
   color: #fb811e;
+  }
+  .tabs__mxh a:hover{
+    background: #fcf1e7;
   }
 
 
@@ -1105,15 +1134,6 @@ padding-left: 10px;
     
   }
   
-  @media screen and (max-width: 768px) {
-    .carousel__customer {
-    text-size-adjust: initial;
-    
-    }
-  }
-
-
-
 
 /************** KEYFRAMES  **************/
 @keyframes agile {
@@ -1200,11 +1220,3 @@ padding-left: 10px;
   }
 }
 
-/**************** CUSTOMER RESPONSIVE  **************/
-@media screen and (max-width: 768px) {
-  .customer {
-    /* max-width: 100%; */
-    height:100%;
-    
-  }
-}
