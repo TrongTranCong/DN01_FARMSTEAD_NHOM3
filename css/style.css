@@ -9,6 +9,7 @@
 body {
   font-family: "Volkhov", serif;
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden !important;
 }
 /* HEADER */
 .header {
@@ -367,8 +368,9 @@ input:focus {
   #farmCarousel .carousel-item img {
   height: 100%;
   }
-}
-
+.carouselFarm .carousel-indicators{
+    bottom: 0;
+  }
 .row {
   align-items: center;
 }
