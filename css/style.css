@@ -361,16 +361,16 @@ input:focus {
     right: 0;
   }
 
-#farmCarousel .carousel-inner {
+  #farmCarousel .carousel-inner {
   height: 100vh;
-}
-#farmCarousel .carousel-item,
-#farmCarousel .carousel-item img {
+  }
+  #farmCarousel .carousel-item,
+  #farmCarousel .carousel-item img {
   height: 100%;
+  }
 }
-
+/* END RESPONSIVE CAROUSEL */
 .row {
-  display: flex;
   align-items: center;
 }
 .carousel-left {
